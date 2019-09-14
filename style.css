@@ -13,12 +13,12 @@
 .toDoList {
     position: absolute;
     right: 0;
-    bottom: 70px;
+    bottom: 5%;
     width: 30%;
     margin: 0 auto;
     padding: 15px;
     color: white;
-    font-size: 20px;
+    font-size: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
