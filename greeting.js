@@ -15,6 +15,7 @@ function handleSubmit(event){
     const currentValue = input.value;
     paintGreeting(currentValue);
     saveName(currentValue);
+    input.value = "";
 }
 
 function askForName(){
@@ -22,10 +23,22 @@ function askForName(){
     form.addEventListener("submit",handleSubmit);
 }
 
+function delGreeting(){
+    const delGBtn = event.target;
+    greeting.removeChild(delGBtn);
+    localStorage.removeItem(USER_LS);
+    loadName();
+}
+
 function paintGreeting(text){
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}`;
+    const delGBtn = document.createElement("i");
+    delGBtn.classList.add("fas","fa-reply")
+    delGBtn.addEventListener("click", delGreeting);
+    greeting.appendChild(delGBtn);
+
 }
 
 function loadName(){

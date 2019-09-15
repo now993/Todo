@@ -66,14 +66,20 @@ li {
   cursor: pointer;
   opacity: 0.6;
 }
+.greetings i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
 
 .form,
 .greetings {
    display:none;
+   animation: fadeIn .5s linear;
 }
 
 .showing {
     display:block;
+    animation: fadeIn .5s linear;
 }
 
 input[type="text"] {
@@ -86,12 +92,14 @@ input[type="text"] {
     margin-bottom: 1.4em;
     margin-top:1em;
     text-align: center;
+    animation: fadeIn .5s linear;
   }
   
 input::placeholder {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   opacity: 0.9;
+  animation: fadeIn .5s linear;
 }
   
 @keyframes fadeIn {

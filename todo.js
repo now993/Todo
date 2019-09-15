@@ -43,7 +43,7 @@ function paintToDo(text){
 }
 
 
-function handleSubmit(event){
+function handleSubmitTodo(event){
     event.preventDefault();
     const currentValue = toDoInput.value;
     paintToDo(currentValue);
@@ -63,7 +63,7 @@ function loadToDos(){
 
 function init(){
     loadToDos();
-    toDoForm.addEventListener("submit", handleSubmit);
+    toDoForm.addEventListener("submit", handleSubmitTodo);
 }
 
 init();
