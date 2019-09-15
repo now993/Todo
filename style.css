@@ -9,13 +9,13 @@
 }
 .toDoList {
     position: absolute;
-    right: 0;
+    right: 1%;
     bottom: 5%;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     padding: 15px;
     color: white;
-    font-size: 100%;
+    font-size: 80%;
     background-color: rgba(0, 0, 0, 0.8);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -29,7 +29,7 @@ body{
 }
 .greetings {
     margin-top: 0.7em;
-    font-size: 0.9em;
+    font-size: 100%;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
