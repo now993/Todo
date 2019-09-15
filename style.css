@@ -29,7 +29,7 @@ body{
 }
 .greetings {
     margin-top: 0.7em;
-    font-size: 1.5em;
+    font-size: 0.9em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -82,8 +82,8 @@ input[type="text"] {
     border-bottom: 2px solid #fdfdfd;
     color: #ffffff;
     background-color: transparent;
-    font-size: 0.9em;
-    margin-bottom: 1em;
+    font-size: 1.7em;
+    margin-bottom: 1.4em;
     margin-top:1em;
     text-align: center;
   }
