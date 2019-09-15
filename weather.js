@@ -1,10 +1,11 @@
-const weather = document.querySelector(".js-weather");
+const map = document.querySelector(".fa-map-marker-alt");
+const tmp = document.querySelector(".fa-temperature-low");
 const API_KEY = "b9fa747e9908fd29e4217a56cfba63eb";
 const COORDS = 'coords';
 
 function getWeather(lat,lon) {
     fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${API_KEY}&units=metric`
+    `https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${API_KEY}&units=metric`
     )
     .then(function(response){
         return (response.json())
@@ -12,7 +13,8 @@ function getWeather(lat,lon) {
     .then(function(json){
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        map.innerText = temperature;
+        tmp.innerText = place;
     })
 }
 function saveCoords(coordsObj){
